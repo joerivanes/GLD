@@ -101,7 +101,7 @@ De drie onderscheiden gegevensstromen zijn afkomstig van:
 <br>		  
              <ul>
            	<li>de relatief laagfrequent gemeten handpeiling;</li> 
-           	<li>ode relatief hoogfrequente sensormeting, waarbij de meetgegevens in de in de monitoringbuis aanwezige datalogger worden opgeslagen;</li>
+           	<li>de relatief hoogfrequente sensormeting, waarbij de meetgegevens in de in de monitoringbuis aanwezige datalogger worden opgeslagen;</li>
            	<li>de relatief hoogfrequente sensormeting, waarbij de meetgegevens via telemetrie naar de bronhouder/leverancier worden gestuurd.</li>
              </ul></p>  
              <p>De handpeiling betreft een meting van de grondwaterstand die tijdens het veldbezoek wordt uitgevoerd. De meting wordt bijvoorbeeld uitgevoerd met een peilklokje, een elektronisch meetlint of een met een akoestische sensor. In het laatste geval wordt de reistijd tot de waterspiegel in de monitoringbuis gemeten en is er een omrekening (zie stap 2) nodig om de waterstand in de buis te berekenen. Per veldbezoek komt hierbij slechts een enkele meting per peilfilter beschikbaar. De handpeiling kan fungeren als controlemeting van sensormetingen, zoals hieronder beschreven.</p>
@@ -162,10 +162,18 @@ De drie onderscheiden gegevensstromen zijn afkomstig van:
 		<p>De <em>meetprocedure</em> betreft de procedure of het werkvoorschrift dat gehanteerd is bij de observatie voor de grondwatermonitoring. In deze procedure staan de afspraken waaronder de observatie is uitgevoerd. De procedures zijn opgesomd in een waardelijst.</p>
 		<p>Het <em>type meetinstrument</em> beschrijft het meetinstrument waarmee de metingen van de waterstand in de monitoringbuis zijn uitgevoerd. In het geval van sensoren betreft het hier het type sensor. Omdat een apparaat in sommige gevallen bestaat uit meerder sensoren wordt niet het apparaat bedoeld.</p>
 		<p>Een relatieve druksensor heeft een ingebouwd mechanisme (een capillair) om voor luchtdruk te compenseren. Een absolute druksensor meet naast de waterdruk ook de luchtdruk. Deze metingen worden rekenkundig gecorrigeerd met behulp van een luchtdrukmeting. De wijze waarop de luchtdrukcompensatie bij druksensoren wordt uitgevoerd, wordt vastgelegd bij <em>type luchtdrukcompensatie</em>.</p>
-		<!--tot hier teksten aangepast-->
-		<p>Het <em>procestype</em> is in WaterML een attribuut dat verplicht wordt opgenomen. Om die reden is dit attribuut ook in het grondwaterstandonderzoek opgenomen. Het procestype geeft aan wat het laatste type proces is dat is uitgevoerd voor de bepaling van het eindresultaat. WaterML heeft een vaste waardelijst voor het procestype: simulatie, handmatige methode, sensor, algoritme en onbekend. Op dit moment wordt in het grondwaterstandonderzoek alleen de waterstand in meter ten opzichte van NAP vastgelegd en geen ruwe meetwaarden. Bij de bepaling van de waterstand ten opzichte van NAP is het laatste proces altijd een berekening. Daarom wordt hier een vaste waarde ingevuld: algoritme. Indien in de toekomst ook ruwe metingen worden vastgelegd, kan hier ruimte worden gemaakt voor een waardelijst.</p>
 
+		<p>Het <em>procestype</em> is in WaterML een attribuut dat verplicht wordt opgenomen. Om die reden is dit attribuut ook in het grondwaterstandonderzoek opgenomen. Het procestype geeft aan wat het laatste type proces is dat is uitgevoerd voor de bepaling van het eindresultaat. WaterML heeft een vaste waardelijst voor het procestype: simulatie, handmatige methode, sensor, algoritme en onbekend. Op dit moment wordt in het grondwaterstandonderzoek alleen de waterstand in meter ten opzichte van NAP vastgelegd en geen ruwe meetwaarden. Bij de bepaling van de waterstand ten opzichte van NAP is het laatste proces altijd een berekening. Daarom wordt hier een vaste waarde ingevuld: algoritme. Indien in de toekomst ook ruwe metingen worden vastgelegd, kan hier ruimte worden gemaakt voor een waardelijst.</p>
+		<p>De individuele tijd-meetwaardeparen van de reguliere metingen worden beoordeeld aan de hand van de controle metingen. Hoe dit proces van beoordelen van de kwaliteit van de tijd-meetwaardeparen verloopt, is beschreven in een werkvoorschrift of procedure, de <em>beoordelingsprocedure</em>. Bij het moment van vaststellen van versie 1.0 van de catalogus is er slechts één procedure beschreven en beschikbaar. Voor de partijen die deze procedure niet gebruiken maar op een andere, niet beschreven wijze beoordelen, is er de mogelijkheid om aan te geven dat beoordeeld is op basis van het oordeel van een deskundige. Omdat het voor een gebruiker waardevol is om te weten op welke wijze er is beoordeeld, is het is de bedoeling dat in volgende versies van de catalogus de waardelijst van beoordelingsprocedures is aangevuld.</p>
+		<p>De uitvoerder is de partij die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de waterstandmeting. De uitvoerder wordt vastgelegd middels het KvK-nummer van de onderneming of de maatschappelijke activiteit of het equivalent van het KvK-nummer in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.</p>
        </section>
+	     		<!--tot hier teksten aangepast-->
+	<section id="entiteit-TijdMeetwaardereeks">
+	  <h4>TijdMeetwaardereeks</h4>
+	     </section>
+	  <section id="entiteit-TijdMeetwaardepaar">
+	  <h4>TijdMeetwaardepaar</h4>
+	     </section>
      </section>
      <section id="INSPIRE">
        <h3>INSPIRE</h3>
